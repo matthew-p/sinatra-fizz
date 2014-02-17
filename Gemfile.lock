@@ -20,4 +20,4 @@ PLATFORMS
 DEPENDENCIES
   sinatra
   slim
-  tilt
+  tilt (~> 1.4.1)
