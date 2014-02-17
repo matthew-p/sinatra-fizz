@@ -1,4 +1,4 @@
 require "./app.rb"
-require "sinatra"
+require "sinatra/base"
 
 run App
