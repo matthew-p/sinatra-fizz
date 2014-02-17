@@ -1,4 +1,4 @@
-require "sinatra"
+require "sinatra/base"
 require 'slim'
 require './lib/fizz_buzz.rb'
 
