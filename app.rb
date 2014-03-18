@@ -12,4 +12,17 @@ class App < Sinatra::Base
     erb :'output.html'
 
   end
+
+  get '/output' do
+    erb :'output.html'
+  end
+
+  get '/output.json' do
+    content_type :json
+    FizzBuzz.new(params[:amount]).as_json
+  end
+
+  get '/api' do
+    erb :'api.html'
+  end
 end
