@@ -1,7 +1,7 @@
 <ul class="unstyled">
 <li><a href="/">Go Back</a></li><br>
 
-<li><a href="/output.json?amount=#{params[:amount]}">Click here</a> for raw JSON output</li><br>
+<li><a href=<%= "/output.json?amount=#{params[:amount]}" %>>Click here</a> for raw JSON output</li><br>
 
 <%= FizzBuzz.new(params[:amount]).as_html %>
 </ul>
