@@ -7,5 +7,7 @@
 
 <li><a href=<%= "/output.text?amount=#{params[:amount]}" %>>Click here</a> to download the Fizzbuzz output as a text file.</li><br>
 
+<li>Results:</li><br>
+
 <%= FizzBuzz.new(params[:amount]).as_html %>
 </ul>
