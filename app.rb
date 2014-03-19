@@ -25,4 +25,10 @@ class App < Sinatra::Base
   get '/api' do
     erb :'api.html'
   end
+
+  get '/output.text' do
+    attachment "fizzbuzz_output.txt"
+    FizzBuzz.new(params[:amount]).as_text
+  end
+
 end

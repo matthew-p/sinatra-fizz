@@ -1,7 +1,11 @@
+<h1>Fizzbuzz Output</h1>
+
 <ul class="unstyled">
-<li><a href="/">Go Back</a></li><br>
+<li><a href="/">Click here</a> to return to the homepage.</a></li><br>
 
 <li><a href=<%= "/output.json?amount=#{params[:amount]}" %>>Click here</a> for raw JSON output</li><br>
+
+<li><a href=<%= "/output.text?amount=#{params[:amount]}" %>>Click here</a> to download the Fizzbuzz output as a text file.</li><br>
 
 <%= FizzBuzz.new(params[:amount]).as_html %>
 </ul>
