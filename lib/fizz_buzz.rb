@@ -10,7 +10,15 @@ class FizzBuzz
   attr_reader :data
 
   def initialize(limit = 0)
-    limit.to_i > 0 ? @data = load(limit.to_i) : @data = []
+    if limit.to_i > 9999
+      limit = 9999
+      @data = load(limit)
+    elsif limit.to_i > 0
+      @data = load(limit.to_i)
+    else
+      @data = []
+    # old: limit.to_i > 0 ? @data = load(limit.to_i) : @data = []
+    end
   end
 
   def load(limit)
