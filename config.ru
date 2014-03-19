@@ -1,4 +1,4 @@
 require "./app.rb"
 
 
-run app
+run App
